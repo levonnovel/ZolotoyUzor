@@ -1,0 +1,23 @@
+﻿@using ZolotoyUzor.Models
+@model List<Paint>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    @{
+
+        foreach (var el in Model)
+        {
+            <div>@el.Id</div>
+            <div>@el.Name</div>
+            <div>@el.Description</div>
+            <div>@el.Price</div>
+            <div>@el.Volume</div>
+            <hr />
+        }
+    }
+</div>
