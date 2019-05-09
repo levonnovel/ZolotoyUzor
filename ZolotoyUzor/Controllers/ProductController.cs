@@ -16,5 +16,11 @@ namespace ZolotoyUzor.Controllers
 
 			return View(els);
         }
+		public ActionResult Item(int id)
+		{
+			var el = Paint.GellPaintByID(id);
+
+			return View(el);
+		}
     }
 }
