@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ZolotoyUzor.Models;
+using ZolotoyUzor.Models.Filters;
 
 namespace ZolotoyUzor.Controllers
 {
@@ -21,6 +22,11 @@ namespace ZolotoyUzor.Controllers
 			var el = Paint.GellPaintByID(id);
 
 			return View(el);
+		}
+		public JsonResult GetPaints(PaintFilter filter)
+		{
+
+			return new JsonResult() { };
 		}
     }
 }
